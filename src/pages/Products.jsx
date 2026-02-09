@@ -48,7 +48,7 @@ const Products = () => {
             initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }}
             className="text-4xl md:text-7xl font-serif mt-4 mb-6 leading-tight"
           >
-            Explore <span className="italic text-amber-200">The Vault</span>
+            Explore <span className="italic text-amber-200">NYKSHA</span>
           </motion.h1>
           <p className="text-neutral-500 max-w-xl mx-auto text-xs md:text-sm leading-relaxed italic px-4">
             "Every piece tells a story of royalty. Select your heritage for the day."
@@ -166,7 +166,7 @@ const Products = () => {
               className="text-center py-20 md:py-32 rounded-[2rem] md:rounded-[3rem] border border-white/5 bg-white/[0.02] px-4"
             >
               <SparklesIcon className="h-10 w-10 md:h-12 md:w-12 mx-auto text-amber-900 mb-6" />
-              <h3 className="text-xl md:text-2xl font-serif mb-2">The Vault is Silent</h3>
+              <h3 className="text-xl md:text-2xl font-serif mb-2">NYKSHA is Silent</h3>
               <p className="text-neutral-500 text-xs md:text-sm italic">Try adjusting your filters to discover hidden gems.</p>
             </motion.div>
           ) : (

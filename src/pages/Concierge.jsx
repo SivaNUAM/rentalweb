@@ -140,8 +140,8 @@ const Concierge = () => {
       {/* --- 4. THE PROMISE --- */}
       <section className="py-24 px-6 text-center max-w-2xl mx-auto">
         <SparklesIcon className="w-10 h-10 text-amber-900 mx-auto mb-8" />
-        <h3 className="text-2xl font-serif italic mb-4">"The vault is not just about rent; it's about making you feel like royalty for a lifetime of memories."</h3>
-        <p className="text-[10px] font-bold uppercase tracking-[0.4em] text-neutral-600">— Lead Curator, The Vault</p>
+        <h3 className="text-2xl font-serif italic mb-4">"The NYKSHA is not just about rent; it's about making you feel like royalty for a lifetime of memories."</h3>
+        <p className="text-[10px] font-bold uppercase tracking-[0.4em] text-neutral-600">— Lead Curator, NYKSHA</p>
       </section>
 
     </div>
