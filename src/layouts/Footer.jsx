@@ -52,7 +52,7 @@ const Footer = () => {
                 className="h-16 w-auto object-contain self-start transition-transform duration-500 hover:scale-105" 
               />
               <h2 className="text-2xl font-serif tracking-tighter text-white">
-                NYK <span className="text-amber-500 italic">SHA</span>
+                NYKSHA<span className="text-amber-500 italic"></span>
               </h2>
             </div>
             

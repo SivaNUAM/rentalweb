@@ -37,7 +37,7 @@ const Loader = () => (
         transition={{ duration: 2, repeat: Infinity, delay: 0.2 }}
         className="text-2xl md:text-3xl font-serif tracking-[0.3em] text-white"
       >
-        NYK <span className="italic text-amber-500 font-light">SHA</span>
+        NYKSHA<span className="italic text-amber-500 font-light"></span>
       </motion.div>
 
       {/* 3. ELEGANT PROGRESS LINE */}

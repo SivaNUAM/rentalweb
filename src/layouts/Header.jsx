@@ -57,7 +57,7 @@ const Header = () => {
                 className="h-12 w-auto md:h-16 object-contain transition-transform duration-500 group-hover:scale-105"
               />
               <span className="text-2xl md:text-3xl font-serif tracking-tighter text-white">
-                NYK <span className="italic text-amber-500 font-light group-hover:tracking-[0.1em] transition-all duration-500">SHA</span>
+                NYKSHA<span className="italic text-amber-500 font-light group-hover:tracking-[0.1em] transition-all duration-500"></span>
               </span>
             </NavLink>
 
