@@ -5,6 +5,8 @@ import {
   EnvelopeIcon, 
   PhoneIcon 
 } from "@heroicons/react/24/outline";
+// Import the logo image
+import images from "../assets/images.png";
 
 const Footer = () => {
   return (
@@ -41,14 +43,23 @@ const Footer = () => {
         {/* --- MAIN LINKS GRID --- */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-24">
           
-          {/* Brand & Mission */}
-          <div className="space-y-6">
-            <h2 className="text-2xl font-serif tracking-tighter text-white">
-              THE <span className="text-amber-500 italic">VAULT</span>
-            </h2>
-            <p className="text-xs leading-relaxed uppercase tracking-widest text-neutral-500">
+          {/* Brand & Mission with Logo */}
+          <div className="space-y-8">
+            <div className="flex flex-col gap-4">
+              <img 
+                src={images} 
+                alt="NYK SHA Logo" 
+                className="h-16 w-auto object-contain self-start transition-transform duration-500 hover:scale-105" 
+              />
+              <h2 className="text-2xl font-serif tracking-tighter text-white">
+                NYK <span className="text-amber-500 italic">SHA</span>
+              </h2>
+            </div>
+            
+            <p className="text-xs leading-relaxed uppercase tracking-widest text-neutral-500 max-w-xs">
               Redefining the Indian bridal experience. Heritage craftsmanship, curated for the modern legacy.
             </p>
+            
             <div className="flex gap-4">
                {/* Fake Social Icons with Glow */}
                {['IG', 'PI', 'FB'].map(social => (
@@ -91,11 +102,11 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-4">
                 <PhoneIcon className="w-5 h-5 text-amber-500" />
-                <p>+91 (800) VAULT-01</p>
+                <p>+91 (800) NYK-SHA-01</p>
               </div>
               <div className="flex items-center gap-4">
                 <EnvelopeIcon className="w-5 h-5 text-amber-500" />
-                <p>concierge@thevault.luxury</p>
+                <p>concierge@nyksha.luxury</p>
               </div>
             </div>
           </div>
@@ -111,7 +122,7 @@ const Footer = () => {
           </div>
           
           <div className="text-[10px] font-bold uppercase tracking-widest text-neutral-600">
-            © {new Date().getFullYear()} The Vault International. All Rights Reserved.
+            © {new Date().getFullYear()} NYK SHA International. All Rights Reserved.
           </div>
 
           <div className="flex gap-8 text-[10px] font-bold uppercase tracking-widest">

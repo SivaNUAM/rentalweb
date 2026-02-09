@@ -3,11 +3,12 @@ import { useState, useEffect } from "react";
 import { 
   ShoppingBagIcon, 
   UserIcon, 
-  Bars3BottomRightIcon,
-  XMarkIcon,
-  SparklesIcon
+  Bars3BottomRightIcon, 
+  XMarkIcon, 
+  SparklesIcon 
 } from "@heroicons/react/24/outline";
 import { motion, AnimatePresence } from "framer-motion";
+import images from "../assets/images.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -44,14 +45,19 @@ const Header = () => {
         <div className="mx-auto max-w-7xl px-6 md:px-12">
           <div className="flex items-center justify-between">
             
-            {/* 1. BRAND LOGO */}
+            {/* 1. BRAND LOGO & NAME (Increased Sizes) */}
             <NavLink 
               to="/" 
-              className="relative z-[130] group" 
+              className="relative z-[130] flex items-center gap-4 group" 
               onClick={() => setMobileMenuOpen(false)}
             >
-              <span className="text-xl md:text-2xl font-serif tracking-tighter text-white">
-                THE <span className="italic text-amber-500 font-light group-hover:tracking-widest transition-all duration-500">VAULT</span>
+              <img 
+                src={images} 
+                alt="NYK SHA Logo" 
+                className="h-12 w-auto md:h-16 object-contain transition-transform duration-500 group-hover:scale-105"
+              />
+              <span className="text-2xl md:text-3xl font-serif tracking-tighter text-white">
+                NYK <span className="italic text-amber-500 font-light group-hover:tracking-[0.1em] transition-all duration-500">SHA</span>
               </span>
             </NavLink>
 
@@ -74,12 +80,12 @@ const Header = () => {
             {/* 3. ACTION ICONS */}
             <div className="flex items-center gap-4 md:gap-8 relative z-[130]">
               <NavLink to="/account" className="hidden sm:block hover:text-amber-500 transition-colors">
-                <UserIcon className="w-5 h-5 stroke-[1.5]" />
+                <UserIcon className="w-6 h-6 stroke-[1.5] text-white" />
               </NavLink>
 
               <NavLink to="/cart" className="relative group p-2">
-                <ShoppingBagIcon className="w-6 h-6 text-white group-hover:text-amber-500 transition-colors" />
-                <span className="absolute top-1 right-1 w-2 h-2 bg-amber-500 rounded-full border-2 border-[#0A0A0A]" />
+                <ShoppingBagIcon className="w-7 h-7 text-white group-hover:text-amber-500 transition-colors" />
+                <span className="absolute top-1 right-1 w-2.5 h-2.5 bg-amber-500 rounded-full border-2 border-[#0A0A0A]" />
               </NavLink>
 
               {/* Mobile Menu Toggle */}
@@ -89,9 +95,9 @@ const Header = () => {
                 aria-label="Toggle Menu"
               >
                 {mobileMenuOpen ? (
-                  <XMarkIcon className="w-7 h-7" />
+                  <XMarkIcon className="w-8 h-8" />
                 ) : (
-                  <Bars3BottomRightIcon className="w-7 h-7" />
+                  <Bars3BottomRightIcon className="w-8 h-8" />
                 )}
               </button>
             </div>
@@ -109,7 +115,6 @@ const Header = () => {
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
             className="fixed inset-0 bg-[#0A0A0A] z-[110] lg:hidden flex flex-col justify-center px-10"
           >
-            {/* Artistic Background Element */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[25vw] font-serif text-white/[0.02] select-none pointer-events-none italic">
               Archive
             </div>
@@ -141,7 +146,6 @@ const Header = () => {
               ))}
             </div>
 
-            {/* Mobile Footer Section */}
             <motion.div 
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
